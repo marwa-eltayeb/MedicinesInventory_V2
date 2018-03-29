@@ -4,14 +4,14 @@
     android:id="@+id/parent_layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-    
+
     <ImageView
         android:id="@+id/image"
         android:layout_width="@dimen/dummyImage"
         android:layout_height="@dimen/dummyImage"
         android:contentDescription="@string/picture_of_the_medicine"
         android:scaleType="fitXY"
-        android:src="@drawable/polyfresh" />
+        tools:src="@drawable/polyfresh" />
 
     <TextView
         android:id="@+id/name"

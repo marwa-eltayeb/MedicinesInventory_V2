@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for a single list item in the list of medicines -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/picture_of_the_medicine"
+        android:scaleType="fitXY"
+        android:src="@drawable/polyfresh" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/quantity"
+        android:layout_alignBottom="@+id/quantity"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/image"
+        android:layout_toRightOf="@+id/image"
+        android:textColor="#2B3D4D"
+        android:textSize="22sp"
+        tools:text="Polyfresh" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="21dp"
+        android:textColor="#2B3D4D"
+        android:textSize="18sp"
+        tools:text="20"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="14dp"
+        android:textColor="#AEB6BD"
+        android:textSize="18sp"
+        tools:text="20.00" />
+
+    <Button
+        android:id="@+id/sell_Button"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold|italic"
+        android:text="@string/sale"
+        android:layout_alignBaseline="@+id/price"
+        android:layout_alignBottom="@+id/price"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp" />
+</RelativeLayout>
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/dots"
+        android:icon="@drawable/dots"
+        android:orderInCategory="11111"
+        android:title="@string/dots"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/insert_dummy_data"
+                android:title="@string/insert_dummy_data"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/delete_all_entries"
+                android:title="@string/delete_all_entries"
+                app:showAsAction="never" />
+
+        </menu>
+    </item><!---->
+</menu>
+

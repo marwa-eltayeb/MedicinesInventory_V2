@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Medicines Inventory</string>
+    <string name="activity_name">Add Medicine Data</string>
+
+    <!-- Label for overflow menu option that inserts fake medicine data into the app-->
+    <string name="insert_dummy_data">Insert Dummy Data</string>
+
+    <!-- Label for overflow menu option that deletes all medicine data in the app -->
+    <string name="delete_all_entries">Delete All Medicines</string>
+
+    <!-- Label for editor menu option to save medicine and leave editor  -->
+    <string name="save">Save</string>
+
+    <!-- Label for editor overflow menu option that deletes the current medicine -->
+    <string name="delete_an_item">Delete</string>
+
+    <!-- Title text for the empty view, which describes the empty dog house image -->
+    <string name="empty_view_title_text">Your drug store is empty</string>
+    <!-- Subtitle text for the empty view that prompts the user to add a medicine -->
+    <string name="empty_view_subtitle_text">Get started by adding an item</string>
+
+    <string name="dots">dots</string>
+    <string name="picture_of_the_medicine">Picture of the medicine</string>
+    <string name="name">Name</string>
+    <string name="product">Product</string>
+    <string name="price">Price</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="quantity">Quantity</string>
+    <string name="supplier">Supplier</string>
+    <string name="phone">Phone</string>
+    <string name="order">Order</string>
+
+    <string name="unit"> unit</string>
+    <string name="units"> units</string>
+
+    <!-- Toast message in editor when new medicine has been successfully inserted  -->
+    <string name="editor_insert_medicine_successful">Medicine saved</string>
+
+    <!-- Toast message in editor when new medicine has failed to be inserted  -->
+    <string name="editor_insert_medicine_failed">Error with saving medicine</string>
+
+    <!-- Toast message in editor when current medicine was successfully updated  -->
+    <string name="editor_update_medicine_successful">Medicine updated</string>
+
+    <!-- Toast message in editor when current medicine has failed to be updated  -->
+    <string name="editor_update_medicine_failed">Error with updating medicine</string>
+
+    <!-- Title for the activity to add a new medicine -->
+    <string name="detail_activity_title_new_medicine">Add a Medicine</string>
+
+    <!-- Title for the activity to edit an existing medicine -->
+    <string name="detail_activity_title_edit_medicine">Edit Medicine</string>
+
+    <!-- Toast message in editor when current medicine was successfully deleted -->
+    <string name="editor_delete_medicine_successful">Medicine deleted</string>
+
+    <!-- Toast message in editor when current medicine has failed to be deleted -->
+    <string name="editor_delete_medicine_failed">Error with deleting medicine</string>
+
+    <string name="no_more_stock">No more in Stock</string>
+    <string name="picture_od_a_medicine">Picture of a medicine</string>
+    <string name="sale">Sale</string>
+    <string name="a_pharmacy">A Pharmacy</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="one">1</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current medicine  -->
+    <string name="delete_dialog_msg">Do you want to delete this medicine?</string>
+
+    <!-- Dialog button text for the option to confirm deleting the current medicine  -->
+    <string name="delete">Delete</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current medicine  -->
+    <string name="cancel">Cancel</string>
+
+    <!-- Dialog message when user is leaving editor but hasn't saved changes  -->
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a user's changes  -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current medicine  -->
+    <string name="keep_editing">Keep Editing</string>
+</resources>

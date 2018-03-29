@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/image"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/dummyImage"
+        android:layout_height="@dimen/dummyImage"
         android:contentDescription="@string/picture_of_the_medicine"
         android:scaleType="fitXY"
         android:src="@drawable/polyfresh" />
@@ -20,22 +20,22 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/quantity"
         android:layout_alignBottom="@+id/quantity"
-        android:layout_marginLeft="13dp"
-        android:layout_marginStart="13dp"
+        android:layout_marginLeft="@dimen/marginForText"
+        android:layout_marginStart="@dimen/marginForText"
         android:layout_toEndOf="@+id/image"
         android:layout_toRightOf="@+id/image"
-        android:textColor="#2B3D4D"
-        android:textSize="22sp"
+        android:textColor="@color/darkGray"
+        android:textSize="@dimen/textSize"
         tools:text="Polyfresh" />
 
     <TextView
         android:id="@+id/quantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="21dp"
-        android:textColor="#2B3D4D"
-        android:textSize="18sp"
+        android:layout_marginRight="@dimen/marginLeft"
+        android:layout_marginTop="@dimen/margin"
+        android:textColor="@color/darkGray"
+        android:textSize="@dimen/textSizeOfDummyData"
         tools:text="20"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
@@ -49,15 +49,15 @@
         android:layout_alignLeft="@+id/name"
         android:layout_alignStart="@+id/name"
         android:layout_below="@+id/name"
-        android:layout_marginTop="14dp"
-        android:textColor="#AEB6BD"
-        android:textSize="18sp"
+        android:layout_marginTop="@dimen/margin"
+        android:textColor="@color/lightGray"
+        android:textSize="@dimen/textSizeOfDummyData"
         tools:text="20.00" />
 
     <Button
         android:id="@+id/sell_Button"
-        android:layout_width="65dp"
-        android:layout_height="40dp"
+        android:layout_width="@dimen/widthOfSellButton"
+        android:layout_height="@dimen/HeightOfSellButton"
         android:textColor="@color/colorPrimary"
         android:textStyle="bold|italic"
         android:text="@string/sale"
@@ -65,7 +65,7 @@
         android:layout_alignBottom="@+id/price"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="12dp"
-        android:layout_marginEnd="12dp" />
+        android:layout_marginRight="@dimen/marginOfSellButton"
+        android:layout_marginEnd="@dimen/marginOfSellButton" />
 </RelativeLayout>
 

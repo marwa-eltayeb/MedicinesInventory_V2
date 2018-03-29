@@ -32,7 +32,7 @@
             android:layout_below="@+id/empty_shelter_image"
             android:layout_centerHorizontal="true"
             android:fontFamily="sans-serif-medium"
-            android:paddingTop="16dp"
+            android:paddingTop="@dimen/margin"
             android:text="@string/empty_view_title_text"
             android:textAppearance="?android:textAppearanceMedium"/>
 
@@ -43,10 +43,10 @@
             android:layout_below="@+id/empty_title_text"
             android:layout_centerHorizontal="true"
             android:fontFamily="sans-serif"
-            android:paddingTop="8dp"
+            android:paddingTop="@dimen/padding"
             android:text="@string/empty_view_subtitle_text"
             android:textAppearance="?android:textAppearanceSmall"
-            android:textColor="#A2AAB0"/>
+            android:textColor="@color/lightGray"/>
     </RelativeLayout>
 
 
@@ -57,6 +57,5 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@drawable/add_medicine"
-        tools:ignore="RtlHardcoded" />
+        android:src="@drawable/add_medicine" />
 </RelativeLayout>

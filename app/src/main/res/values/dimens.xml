@@ -4,5 +4,35 @@
     <dimen name="fab_margin">16dp</dimen>
 
     <!-- Common margin value used throughout the app -->
-    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="margin">16dp</dimen>
+
+    <dimen name="padding">8dp</dimen>
+
+    <!-- Add Photo Button -->
+    <dimen name="heightOfButton">40dp</dimen>
+    <dimen name="marginRight">20dp</dimen>
+
+    <!-- Height and width of Image -->
+    <dimen name="heightOfImage">120dp</dimen>
+    <dimen name="widthOfImage">240dp</dimen>
+
+    <!-- Increment and decrement Button -->
+    <dimen name="button">48dp</dimen>
+    <dimen name="textSize">25sp</dimen>
+    <dimen name="marginLeft">30dp</dimen>
+
+    <!-- Order Button -->
+    <dimen name="widthOfOrderButton">130dp</dimen>
+
+    <!-- Dummy data -->
+    <dimen name="dummyImage">100dp</dimen>
+    <dimen name="marginForText">13dp</dimen>
+    <dimen name="textSizeOfDummyData">18sp</dimen>
+
+    <!-- Sell Button -->
+    <dimen name="widthOfSellButton">65dp</dimen>
+    <dimen name="HeightOfSellButton">40dp</dimen>
+    <dimen name="marginOfSellButton">12dp</dimen>
+
+
 </resources>

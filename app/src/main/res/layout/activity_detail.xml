@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Layout for the editor -->
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for the editor -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
+    android:paddingLeft="@dimen/margin"
+    android:paddingRight="@dimen/margin"
     android:weightSum="6"
     tools:context=".DetailActivity">
 
@@ -46,8 +45,8 @@
         <!-- Price field -->
         <EditText
             android:id="@+id/edit_price"
-            android:inputType="numberDecimal"
-            style="@style/EditorFieldStyle" />
+            style="@style/EditorFieldStyle"
+            android:inputType="numberDecimal" />
     </LinearLayout>
 
     <!-- Price category -->
@@ -60,8 +59,8 @@
         <Button
             android:id="@+id/buttonForImage"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_marginRight="20dp"
+            android:layout_height="@dimen/heightOfButton"
+            android:layout_marginRight="@dimen/marginRight"
             android:text="@string/add_photo"
             android:textAllCaps="false"
             android:textColor="@color/colorPrimary" />
@@ -69,11 +68,11 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="240dp"
-            android:layout_height="120dp"
+            android:layout_width="@dimen/widthOfImage"
+            android:layout_height="@dimen/heightOfImage"
+            android:contentDescription="@string/picture_od_a_medicine"
             android:scaleType="fitXY"
-            android:src="@drawable/polyfresh"
-            android:contentDescription="@string/picture_od_a_medicine" />
+            android:src="@drawable/polyfresh" />
     </LinearLayout>
 
     <!-- Quantity category -->
@@ -85,36 +84,34 @@
 
         <!-- Label -->
         <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="100dp"
-            android:textColor="@color/colorPrimary"
-            android:textSize="18sp"
+            style="@style/CategoryStyle"
             android:text="@string/quantity" />
 
         <Button
             android:id="@+id/decreaseButton"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
+            android:layout_marginLeft="@dimen/marginLeft"
             android:onClick="decrement"
-            android:textSize="25sp"
-            android:text="@string/minus" />
+            android:text="@string/minus"
+            android:textSize="@dimen/textSize" />
 
         <!-- Quantity field -->
         <EditText
             android:id="@+id/edit_quantity"
+            style="@style/EditorFieldStyle"
+            android:gravity="center"
             android:inputType="number"
             android:text="@string/one"
-            android:textSize="25sp"
-            android:gravity="center"
-            style="@style/EditorFieldStyle" />
+            android:textSize="@dimen/textSize" />
 
         <Button
             android:id="@+id/increaseButton"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="@dimen/button"
+            android:layout_height="@dimen/button"
             android:onClick="increment"
-            android:textSize="25sp"
-            android:text="@string/plus" />
+            android:text="@string/plus"
+            android:textSize="@dimen/textSize" />
     </LinearLayout>
 
     <!-- Supplier category -->
@@ -133,7 +130,7 @@
         <EditText
             android:id="@+id/edit_Supplier"
             style="@style/EditorFieldStyle"
-            android:inputType="textCapWords" />
+            android:inputType="text" />
     </LinearLayout>
 
     <!-- Phone category -->
@@ -158,14 +155,14 @@
     <!-- Order -->
     <Button
         android:id="@+id/orderButton"
-        android:layout_weight="1"
-        android:layout_width="130dp"
+        android:layout_width="@dimen/widthOfOrderButton"
         android:layout_height="0dp"
         android:layout_gravity="center"
-        android:text="@string/order"
+        android:layout_weight="1"
         android:onClick="orderProductFromSupplier"
+        android:text="@string/order"
         android:textColor="@color/colorPrimary"
-        android:textSize="20sp"
+        android:textSize="@dimen/textSize"
         android:textStyle="bold" />
 </LinearLayout>
 

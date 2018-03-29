@@ -38,7 +38,7 @@
         android:layout_marginTop="@dimen/margin"
         android:textColor="@color/darkGray"
         android:textSize="@dimen/textSizeOfDummyData"
-        tools:text="20" />
+        tools:text="5" />
 
 
     <TextView

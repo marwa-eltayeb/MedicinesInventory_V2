@@ -4,8 +4,7 @@
     android:id="@+id/parent_layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-
-
+    
     <ImageView
         android:id="@+id/image"
         android:layout_width="@dimen/dummyImage"
@@ -32,14 +31,14 @@
         android:id="@+id/quantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
         android:layout_marginRight="@dimen/marginLeft"
         android:layout_marginTop="@dimen/margin"
         android:textColor="@color/darkGray"
         android:textSize="@dimen/textSizeOfDummyData"
-        tools:text="20"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        tools:text="20" />
 
 
     <TextView
@@ -58,14 +57,14 @@
         android:id="@+id/sell_Button"
         android:layout_width="@dimen/widthOfSellButton"
         android:layout_height="@dimen/HeightOfSellButton"
-        android:textColor="@color/colorPrimary"
-        android:textStyle="bold|italic"
-        android:text="@string/sale"
         android:layout_alignBaseline="@+id/price"
         android:layout_alignBottom="@+id/price"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/marginOfSellButton"
         android:layout_marginRight="@dimen/marginOfSellButton"
-        android:layout_marginEnd="@dimen/marginOfSellButton" />
+        android:text="@string/sale"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold|italic" />
 </RelativeLayout>
 

@@ -1,11 +1,14 @@
 package com.example.marwa.medicinesinventory;
 
+import android.Manifest;
 import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v4.app.LoaderManager;
@@ -84,6 +87,7 @@ public class DetailActivity extends AppCompatActivity implements LoaderManager.L
 
     byte[] imageByteArray;
     Bitmap bitmap;
+
 
     /**
      * Boolean flag that keeps track of whether the medicine has been edited (true) or not (false)
@@ -177,6 +181,14 @@ public class DetailActivity extends AppCompatActivity implements LoaderManager.L
 
     // Get Image from Gallery
     private void getImageFromGallery() {
+        int READ_EXTERNAL_STORAGE = 0;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (DetailActivity.this.checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                DetailActivity.this.requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, READ_EXTERNAL_STORAGE);
+                return;
+            }
+        }
+
         try {
             Intent intent = new Intent(Intent.ACTION_PICK,
                     MediaStore.Images.Media.INTERNAL_CONTENT_URI);
@@ -193,19 +205,16 @@ public class DetailActivity extends AppCompatActivity implements LoaderManager.L
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == 100 && resultCode == RESULT_OK) {
+
             Uri selectedImage = data.getData();
             imageView.setImageURI(selectedImage);
 
-
             try {
                 bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), selectedImage);
+                imageByteArray = DbBitmapUtility.getBytes(bitmap);
             } catch (IOException e) {
                 e.printStackTrace();
             }
-
-            imageByteArray = DbBitmapUtility.getBytes(bitmap);
-
-
         }
     }
 

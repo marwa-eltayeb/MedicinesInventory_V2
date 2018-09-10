@@ -1,7 +1,7 @@
 # Description
 
 - It is a medicine inventory app for users to add, update and remove inventory. 
-- Users can track the quantity of the available medicines and 
+- Users can track the quantity of the available medicines.
 - They can call the supplier when they want to order any medicine.
 
 ## Screenshots
